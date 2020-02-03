@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp" tools:context=".TokenActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Content"
+        android:id="@+id/contenth"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="content text here"
+        android:id="@+id/contentt"
+        android:textSize="20dip"
+        android:layout_below="@id/contenth" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Created"
+        android:id="@+id/createdh"
+        android:layout_below="@id/contentt" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="created text here"
+        android:id="@+id/createdt"
+        android:textSize="20dip"
+        android:layout_below="@id/createdh" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Consumed At"
+        android:id="@+id/consumedath"
+        android:layout_below="@id/createdt" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="consumed at text here"
+        android:id="@+id/consumedatt"
+        android:textSize="20dip"
+        android:layout_below="@id/consumedath" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Consumed "
+        android:id="@+id/consumedh"
+        android:layout_below="@id/consumedatt" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="consumed text here"
+        android:id="@+id/consumedt"
+        android:textSize="20dip"
+        android:layout_below="@id/consumedh" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="data not founded"
+        android:id="@+id/Message"
+        android:textSize="20dip"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        android:layout_below="@id/consumedt" />
+
+</RelativeLayout>

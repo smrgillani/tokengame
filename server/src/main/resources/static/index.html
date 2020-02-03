@@ -1,0 +1,46 @@
+
+<html>
+	<head>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script src="script/urdutextbox.js"></script>
+	</head>
+	<body>
+		<form method="POST" action="takseer">
+                    <table>
+                        <tr>
+                            <td><input type="submit" name="submit" value="Takseer" > </td>
+                            <td><input type="text" name="urdutext" id="urdutext" style="text-align:right; font-size: large"> </td>
+                        </tr>
+                        <tr>
+                            <td align="right">Dammam: </td>
+                            <td><div id="results">0</div></td>
+                        </tr>
+                    </table>
+			
+			
+                        
+		</form>
+	</body>
+</html>
+<script>
+
+window.onload = myOnload;
+
+function myOnload(evt){
+MakeTextBoxUrduEnabled(urdutext);//enable Urdu in html text box
+}
+
+// On key press function
+$('#urdutext').keyup(function(e) {
+    var existingString = $("#urdutext").val();
+    //console.log(existingString) ;
+    if (existingString.length < 3) {
+        $('div#results').html("0");
+        return;
+    } //wasn't enter, not > 2 char
+    $.get('/zammam?urdutext=' + existingString, function(data) {
+        $('div#results').html(data);
+        $('#results').show();
+    });
+});
+</script>

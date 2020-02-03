@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Token Game</string>
+    <string name="Login_ABT">User Login</string>
+    <string name="Register_ABT">User Registration</string>
+    <string name="Home_ABT">Token Categories</string>
+    <string name="User_ABT">Update User Profile</string>
+    <string name="Tokens_ABT">Tokens</string>
+    <string name="Token_ABT">Token Information</string>
+    <string name="Password_ABT">Change Your Password</string>
+    <string name="facebook_app_id">898553093603153</string>
+    <string name="fb_login_protocol_scheme">fb[APP_ID]</string>
+</resources>
